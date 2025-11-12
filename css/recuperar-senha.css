@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #172031; /* mesma cor do login */
+}
+
+/* Container do formulário */
+.reset-container {
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+}
+
+.reset-form h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.reset-form p {
+    color: #b8b8d1;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Campos de input */
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -20px;
+    font-size: 12px;
+    color: #03e9f4;
+}
+
+/* Botão enviar */
+.btn-reset {
+    width: 100%;
+    padding: 12px 0;
+    background: #03e9f4;
+    border: none;
+    border-radius: 5px;
+    color: #172031;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-reset:hover {
+    background: #02c6d0;
+}
+
+/* Link voltar para login */
+.back-login {
+    margin-top: 20px;
+}
+
+.back-login a {
+    color: #5b6b8b;
+    font-size: 13px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.back-login a:hover {
+    color: #03e9f4;
+}
+
+/* Responsividade */
+@media (max-width: 420px) {
+    .reset-container {
+        width: 90%;
+        padding: 30px;
+    }
+}

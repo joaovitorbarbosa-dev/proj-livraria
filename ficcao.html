@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Descubra os melhores livros de Ficção Científica na Livraria Literária. Explore mundos futuristas e os limites da imaginação.">
+    <title>Ficção Científica | Livraria Literária</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="dark-mode">
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Livraria Literária Logo">
+                    <span class="logo-text">Livraria Literária</span>
+                </div>
+
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Buscar por título ou autor...">
+                    <button class="search-btn" aria-label="Buscar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <a href="login.html" class="btn-cadastro">
+                    Login/Cadastro
+                </a>
+                <button class="btn-carrinho" id="abrirCarrinho">🛒 Ver Carrinho</button>
+
+
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <button class="theme-toggle mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="romance.html" class="nav-link">Romance</a></li>
+                    <li><a href="acao.html" class="nav-link">Ação</a></li>
+                    <li><a href="comedia.html" class="nav-link">Comédia</a></li>
+                    <li><a href="ficcao.html" class="nav-link active">Ficção</a></li>
+                    <li><a href="manga.html" class="nav-link">Mangá</a></li>
+                    <li><a href="terror.html" class="nav-link">Terror</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section" id="ficcao-books">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">✨ Livros de Ficção Científica</h1>
+                <p class="section-subtitle">Explore mundos futuristas, tecnologia avançada e os limites da imaginação</p>
+            </div>
+
+            <div class="books-grid">
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/ficcao/ficcao_1.jpg" alt="1984 ">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">1984</h3>
+                        <p class="book-author"> George Orwell</p>
+                        <button class="book-genre">R$22,10</button>
+                        <button class="btn-add" onclick="adicionarItem('1984', 22.10)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/ficcao/ficcao_2.jpg" alt="Admirável mundo novo">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Admirável mundo novo</h3>
+                        <p class="book-author"> Aldous Leonard Huxley</p>
+                        <button class="book-genre">R$39,00</button>
+                        <button class="btn-add" onclick="adicionarItem('Admirável mundo novo', 39.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/ficcao/ficcao_3.jpg" alt="Fahrenheit 451">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Fahrenheit 451</h3>
+                        <p class="book-author"> Ray Bradbury</p>
+                        <button class="book-genre">R$42,09</button>
+                        <button class="btn-add" onclick="adicionarItem('Fahrenheit 451', 42.09)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/ficcao/ficcao_4.jpg" alt="Duna: livro 1">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Duna: livro 1</h3>
+                        <p class="book-author"> Frank Herbert</p>
+                        <button class="book-genre">R$67,58</button>
+                        <button class="btn-add" onclick="adicionarItem('Duna: livro 1', 67.58)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/ficcao/ficcao_5.jpg" alt="Messias de Duna: livro 2 ">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Messias de Duna: livro 2 </h3>
+                        <p class="book-author"> Frank Herbert</p>
+                        <button class="book-genre">R$57,56</button>
+                        <button class="btn-add" onclick="adicionarItem('Messias de Duna: livro 2', 57.56)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/ficcao/ficcao_6.jpg" alt="Filhos de Duna: livro 3 ">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Filhos de Duna: livro 3 </h3>
+                        <p class="book-author"> Frank Herbert</p>
+                        <button class="book-genre">R$71,90</button>
+                        <button class="btn-add" onclick="adicionarItem('Filhos de Duna: livro 3', 71.90)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/ficcao/ficcao_7.jpg" alt="Imperador Deus de Duna: livro 4">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Imperador Deus de Duna: livro 4</h3>
+                        <p class="book-author"> Frank Herbert</p>
+                        <button class="book-genre">R$78,99</button>
+                        <button class="btn-add" onclick="adicionarItem('Imperador Deus de Duna: livro 4', 78.99)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/ficcao/ficcao_8.jpg" alt="Hereges de Duna: livro 5">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Hereges de Duna: livro 5</h3>
+                        <p class="book-author">Frank Herbert</p>
+                        <button class="book-genre">R$78,99</button>
+                        <button class="btn-add" onclick="adicionarItem('Hereges de Duna: livro 5', 78.99)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/ficcao/ficcao_9.jpg" alt="Herdeiras de Duna: livro 6">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Herdeiras de Duna: livro 6</h3>
+                        <p class="book-author">Frank Herbert</p>
+                        <button class="book-genre">R$78,99</button>
+                        <button class="btn-add" onclick="adicionarItem('Herdeiras de Duna: livro 6', 78.99)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/ficcao/ficcao_10.jpg" alt="Guerra do Velho: 1">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title"> Guerra do Velho: 1</h3>
+                        <p class="book-author"> John Scalzi</p>
+                        <button class="book-genre">R$51,78</button>
+                        <button class="btn-add" onclick="adicionarItem('Guerra do Velho: 1', 51.78)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Sobre a Livraria Literária</h3>
+                    <p class="footer-text">Sua loja online de livros com os melhores títulos de todos os gêneros.
+                        Explore um universo infinito de histórias.</p>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contato</h3>
+                    <ul class="footer-list">
+                        <li><a href="contato@gmail.com">contato69@gmail.com</a></li>
+                        <li><a href="tel:+5571999999999">+55(71)######### </a></li>
+                        <li>Bahia, BA - Brasil</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Livraria Literária. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="carrinho" id="carrinho">
+        <h2>🛍️ Seu Carrinho</h2>
+        <div id="itensCarrinho"></div>
+        <p id="total">Total: R$ 0,00</p>
+        <button class="btn-carrinho" id="fecharCarrinho">Fechar</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

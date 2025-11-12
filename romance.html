@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra os melhores livros de Romance na Livraria Literária">
+    <title>Romance - Livraria Literária</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-mode">
+    <!-- Cabeçalho -->
+    <header class="header">
+    <div class="container">
+        <!-- Linha superior: logo, busca e tema -->
+        <div class="header-content">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="images/logo.png" alt="Livraria Literária Logo">
+                <span class="logo-text">Livraria Literária</span>
+            </div>
+
+            <!-- Barra de Pesquisa -->
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Buscar por título ou autor...">
+                <button class="search-btn" aria-label="Buscar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+           <a href="login.html" class="btn-cadastro">
+    Login/Cadastro
+</a>
+
+
+            <!-- Alternador de Tema -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Linha inferior: menu de gêneros -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link active">Início</a></li>
+                <li><a href="romance.html" class="nav-link">Romance</a></li>
+                <li><a href="acao.html" class="nav-link">Ação</a></li>
+                <li><a href="comedia.html" class="nav-link">Comédia</a></li>
+                <li><a href="ficcao.html" class="nav-link">Ficção</a></li>
+                <li><a href="manga.html" class="nav-link">Mangá</a></li>
+                <li><a href="terror.html" class="nav-link">Terror</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Conteúdo Principal -->
+    <main style="margin-top: 80px;">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Romance</h1>
+                    <p class="section-subtitle">Histórias que tocam o coração e celebram o amor em todas as suas formas</p>
+                </div>
+                
+                <div class="books-grid">
+                    <!-- Livro 1 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="images/romance/romance_1.jpg" alt="Dom Casmurro">
+                            <div class="book-overlay">
+                                <button class="btn-overlay">Saiba mais</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Dom Casmurro</h3>
+                            <p class="book-author">Machado de Assis</p>
+                            <button class="book-genre">R$ 29,90</button>
+                        </div>
+                    </article>
+
+                    <!-- Livro 2 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="images/romance/romance_2.jpg" alt="De Sangue e Cinzas">
+                            <div class="book-overlay">
+                                <button class="btn-overlay">Saiba mais</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Til</h3>
+                            <p class="book-author">José de Alencar</p>
+                            <button class="book-genre">R$ 12,98</button>
+                        </div>
+                    </article>
+
+                    <!-- Livro 3 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="images/romance/romance_3.jpg" alt="Almas Gêmeas">
+                            <div class="book-overlay">
+                                <button class="btn-overlay">Saiba mais</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Brida</h3>
+                            <p class="book-author">Paulo Coelho</p>
+                            <button class="book-genre">R$ 55,92</button>
+                        </div>
+                    </article>
+
+                    <!-- Livro 4 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="images/romance/romance_4.jpg" alt="Encontrei Você">
+                            <div class="book-overlay">
+                                <button class="btn-overlay">Saiba mais</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Senhora</h3>
+                            <p class="book-author">José de Alencar</p>
+                            <button class="book-genre">R$ 22,10</button>
+                        </div>
+                    </article>
+
+                    <!-- Livro 5 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="images/romance/romance_5.jpg" alt="Obsessão">
+                            <div class="book-overlay">
+                                <button class="btn-overlay">Saiba mais</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Sinhazinha</h3>
+                            <p class="book-author">Afrânio Peixoto</p>
+                            <button class="book-genre">R$ 9,90</button>
+                        </div>
+                    </article>
+
+                    <!-- Livro 6 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="images/romance/romance_6.jpg" alt="Até Breve">
+                            <div class="book-overlay">
+                                <button class="btn-overlay">Saiba mais</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Eva</h3>
+                            <p class="book-author">Nara Vidal</p>
+                            <button class="book-genre">R$ 63,90</button>
+                        </div>
+                    </article>
+
+                    <!-- Livro 7 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="images/romance/romance_7.jpg" alt="Antes Que Você Diga Adeus">
+                            <div class="book-overlay">
+                                <button class="btn-overlay">Saiba mais</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Equador</h3>
+                            <p class="book-author">Miguel Sousa Tavares</p>
+                            <button class="book-genre">R$ 35,83</button>
+                        </div>
+                    </article>
+
+                    <!-- Livro 8 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="images/romance/romance_8.jpg" alt="Café e Livros">
+                            <div class="book-overlay">
+                                <button class="btn-overlay">Saiba mais</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">O Livro de Eva</h3>
+                            <p class="book-author">Constance Beresford-Howe</p>
+                            <button class="book-genre">R$ 30,00</button>
+                        </div>
+                    </article>
+
+                    <!-- Livro 9 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="images/romance/romance_9.jpg" alt="Jardim de Rosas">
+                            <div class="book-overlay">
+                                <button class="btn-overlay">Saiba mais</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Flores</h3>
+                            <p class="book-author">Afonso Cruz</p>
+                            <button class="book-genre">R$ 89,90</button>
+                        </div>
+                    </article>
+
+                    <!-- Livro 10 -->
+                    <article class="book-card">
+                        <div class="book-cover">
+                            <img src="images/romance/romance_10.jpg" alt="Amor na Cidade">
+                            <div class="book-overlay">
+                                <button class="btn-overlay">Saiba mais</button>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Água Funda</h3>
+                            <p class="book-author">Ruth Guimarães</p>
+                            <button class="book-genre">R$ 46,50</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3 class="footer-title">Sobre Nós</h3>
+                    <p class="footer-text">A Livraria Literária é sua fonte confiável para descobrir os melhores livros em diversos gêneros. Cultivamos o amor pela leitura há mais de 10 anos.</p>
+                </div>
+                <div>
+                    <h3 class="footer-title">Links Rápidos</h3>
+                    <ul class="footer-list">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="romance.html">Romance</a></li>
+                        <li><a href="acao.html">Ação</a></li>
+                        <li><a href="comedia.html">Comédia</a></li>
+                        <li><a href="ficcao.html">Ficção</a></li>
+                        <li><a href="manga.html">Mangá</a></li>
+                        <li><a href="terror.html">Terror</a></li>
+                    </ul>
+                </div>
+                <div>
+                     <h3 class="footer-title">Contato</h3>
+                    <ul class="footer-list">
+                        <li><a href="contato@gmail.com">contato69@gmail.com</a></li>
+                        <li><a href="tel:+5571999999999">+55(71)######### </a></li>
+                        <li>Bahia, BA - Brasil</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.949.555-2.005.959-3.127 1.184-.897-.959-2.178-1.559-3.594-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067C2.179 19.29 4.768 20 7.548 20c9.142 0 14.307-7.721 13.995-14.646a9.936 9.936 0 0 0 .959-2.534z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Livraria Literária. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
