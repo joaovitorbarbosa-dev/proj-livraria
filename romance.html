@@ -12,224 +12,225 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="dark-mode">
-    <!-- Cabeçalho -->
     <header class="header">
-    <div class="container">
-        <!-- Linha superior: logo, busca e tema -->
-        <div class="header-content">
-            <!-- Logo -->
-            <div class="logo">
-                <img src="images/logo.png" alt="Livraria Literária Logo">
-                <span class="logo-text">Livraria Literária</span>
-            </div>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo" aria-label="Página Inicial da Livraria Literária">
+                    <img src="images/logo.png" alt="Livraria Literária Logo">
+                    <span class="logo-text">Livraria Literária</span>
+                </a>
 
-            <!-- Barra de Pesquisa -->
-            <div class="search-bar">
-                <input type="text" class="search-input" placeholder="Buscar por título ou autor...">
-                <button class="search-btn" aria-label="Buscar">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <path d="m21 21-4.35-4.35"></path>
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="Buscar por título ou autor...">
+                    <button class="search-btn" aria-label="Buscar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <a href="login.html" class="btn-cadastro">
+                    Login/Cadastro
+                </a>
+
+                <button class="btn-carrinho" id="abrirCarrinho">🛒 Ver Carrinho</button>
+
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
                 </button>
+                
+                <button class="theme-toggle mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-           <a href="login.html" class="btn-cadastro">
-    Login/Cadastro
-</a>
 
-
-            <!-- Alternador de Tema -->
-            <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
-                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                </svg>
-                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-            </button>
+            <nav class="nav" aria-label="Navegação Principal por Gênero">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="romance.html" class="nav-link active" aria-current="page">Romance</a></li>
+                    <li><a href="acao.html" class="nav-link">Ação</a></li>
+                    <li><a href="comedia.html" class="nav-link">Comédia</a></li>
+                    <li><a href="ficcao.html" class="nav-link">Ficção</a></li>
+                    <li><a href="manga.html" class="nav-link">Mangá</a></li>
+                    <li><a href="terror.html" class="nav-link">Terror</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <!-- Linha inferior: menu de gêneros -->
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="index.html" class="nav-link active">Início</a></li>
-                <li><a href="romance.html" class="nav-link">Romance</a></li>
-                <li><a href="acao.html" class="nav-link">Ação</a></li>
-                <li><a href="comedia.html" class="nav-link">Comédia</a></li>
-                <li><a href="ficcao.html" class="nav-link">Ficção</a></li>
-                <li><a href="manga.html" class="nav-link">Mangá</a></li>
-                <li><a href="terror.html" class="nav-link">Terror</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-    <!-- Conteúdo Principal -->
     <main style="margin-top: 80px;">
         <section class="section">
             <div class="container">
                 <div class="section-header">
-                    <h1 class="section-title">Romance</h1>
+                    <h1 class="section-title">Romance 💖</h1>
                     <p class="section-subtitle">Histórias que tocam o coração e celebram o amor em todas as suas formas</p>
                 </div>
                 
                 <div class="books-grid">
-                    <!-- Livro 1 -->
                     <article class="book-card">
                         <div class="book-cover">
                             <img src="images/romance/romance_1.jpg" alt="Dom Casmurro">
                             <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
+                                <a href="#" class="btn-overlay" aria-label="Detalhes de Dom Casmurro">Saiba mais</a>
                             </div>
                         </div>
                         <div class="book-info">
                             <h3 class="book-title">Dom Casmurro</h3>
                             <p class="book-author">Machado de Assis</p>
                             <button class="book-genre">R$ 29,90</button>
+                            <button class="btn-add" onclick="adicionarItem('Dom Casmurro', 29.90)">Adicionar ao Carrinho</button>
                         </div>
                     </article>
 
-                    <!-- Livro 2 -->
                     <article class="book-card">
                         <div class="book-cover">
-                            <img src="images/romance/romance_2.jpg" alt="De Sangue e Cinzas">
+                            <img src="images/romance/romance_2.jpg" alt="Til">
                             <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
+                                <a href="#" class="btn-overlay" aria-label="Detalhes de Til">Saiba mais</a>
                             </div>
                         </div>
                         <div class="book-info">
                             <h3 class="book-title">Til</h3>
                             <p class="book-author">José de Alencar</p>
                             <button class="book-genre">R$ 12,98</button>
+                            <button class="btn-add" onclick="adicionarItem('Til', 12.98)">Adicionar ao Carrinho</button>
                         </div>
                     </article>
 
-                    <!-- Livro 3 -->
                     <article class="book-card">
                         <div class="book-cover">
-                            <img src="images/romance/romance_3.jpg" alt="Almas Gêmeas">
+                            <img src="images/romance/romance_3.jpg" alt="Brida">
                             <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
+                                <a href="#" class="btn-overlay" aria-label="Detalhes de Brida">Saiba mais</a>
                             </div>
                         </div>
                         <div class="book-info">
                             <h3 class="book-title">Brida</h3>
                             <p class="book-author">Paulo Coelho</p>
                             <button class="book-genre">R$ 55,92</button>
+                            <button class="btn-add" onclick="adicionarItem('Brida', 55.92)">Adicionar ao Carrinho</button>
                         </div>
                     </article>
 
-                    <!-- Livro 4 -->
                     <article class="book-card">
                         <div class="book-cover">
-                            <img src="images/romance/romance_4.jpg" alt="Encontrei Você">
+                            <img src="images/romance/romance_4.jpg" alt="Senhora">
                             <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
+                                <a href="#" class="btn-overlay" aria-label="Detalhes de Senhora">Saiba mais</a>
                             </div>
                         </div>
                         <div class="book-info">
                             <h3 class="book-title">Senhora</h3>
                             <p class="book-author">José de Alencar</p>
                             <button class="book-genre">R$ 22,10</button>
+                            <button class="btn-add" onclick="adicionarItem('Senhora', 22.10)">Adicionar ao Carrinho</button>
                         </div>
                     </article>
 
-                    <!-- Livro 5 -->
                     <article class="book-card">
                         <div class="book-cover">
-                            <img src="images/romance/romance_5.jpg" alt="Obsessão">
+                            <img src="images/romance/romance_5.jpg" alt="Sinhazinha">
                             <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
+                                <a href="#" class="btn-overlay" aria-label="Detalhes de Sinhazinha">Saiba mais</a>
                             </div>
                         </div>
                         <div class="book-info">
                             <h3 class="book-title">Sinhazinha</h3>
                             <p class="book-author">Afrânio Peixoto</p>
                             <button class="book-genre">R$ 9,90</button>
+                            <button class="btn-add" onclick="adicionarItem('Sinhazinha', 9.90)">Adicionar ao Carrinho</button>
                         </div>
                     </article>
 
-                    <!-- Livro 6 -->
                     <article class="book-card">
                         <div class="book-cover">
-                            <img src="images/romance/romance_6.jpg" alt="Até Breve">
+                            <img src="images/romance/romance_6.jpg" alt="Eva">
                             <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
+                                <a href="#" class="btn-overlay" aria-label="Detalhes de Eva">Saiba mais</a>
                             </div>
                         </div>
                         <div class="book-info">
                             <h3 class="book-title">Eva</h3>
                             <p class="book-author">Nara Vidal</p>
                             <button class="book-genre">R$ 63,90</button>
+                            <button class="btn-add" onclick="adicionarItem('Eva', 63.90)">Adicionar ao Carrinho</button>
                         </div>
                     </article>
 
-                    <!-- Livro 7 -->
                     <article class="book-card">
                         <div class="book-cover">
-                            <img src="images/romance/romance_7.jpg" alt="Antes Que Você Diga Adeus">
+                            <img src="images/romance/romance_7.jpg" alt="Equador">
                             <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
+                                <a href="#" class="btn-overlay" aria-label="Detalhes de Equador">Saiba mais</a>
                             </div>
                         </div>
                         <div class="book-info">
                             <h3 class="book-title">Equador</h3>
                             <p class="book-author">Miguel Sousa Tavares</p>
                             <button class="book-genre">R$ 35,83</button>
+                            <button class="btn-add" onclick="adicionarItem('Equador', 35.83)">Adicionar ao Carrinho</button>
                         </div>
                     </article>
 
-                    <!-- Livro 8 -->
                     <article class="book-card">
                         <div class="book-cover">
-                            <img src="images/romance/romance_8.jpg" alt="Café e Livros">
+                            <img src="images/romance/romance_8.jpg" alt="O Livro de Eva">
                             <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
+                                <a href="#" class="btn-overlay" aria-label="Detalhes de O Livro de Eva">Saiba mais</a>
                             </div>
                         </div>
                         <div class="book-info">
                             <h3 class="book-title">O Livro de Eva</h3>
                             <p class="book-author">Constance Beresford-Howe</p>
                             <button class="book-genre">R$ 30,00</button>
+                            <button class="btn-add" onclick="adicionarItem('O Livro de Eva', 30.00)">Adicionar ao Carrinho</button>
                         </div>
                     </article>
 
-                    <!-- Livro 9 -->
                     <article class="book-card">
                         <div class="book-cover">
-                            <img src="images/romance/romance_9.jpg" alt="Jardim de Rosas">
+                            <img src="images/romance/romance_9.jpg" alt="Flores">
                             <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
+                                <a href="#" class="btn-overlay" aria-label="Detalhes de Flores">Saiba mais</a>
                             </div>
                         </div>
                         <div class="book-info">
                             <h3 class="book-title">Flores</h3>
                             <p class="book-author">Afonso Cruz</p>
                             <button class="book-genre">R$ 89,90</button>
+                            <button class="btn-add" onclick="adicionarItem('Flores', 89.90)">Adicionar ao Carrinho</button>
                         </div>
                     </article>
 
-                    <!-- Livro 10 -->
                     <article class="book-card">
                         <div class="book-cover">
-                            <img src="images/romance/romance_10.jpg" alt="Amor na Cidade">
+                            <img src="images/romance/romance_10.jpg" alt="Água Funda">
                             <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
+                                <a href="#" class="btn-overlay" aria-label="Detalhes de Água Funda">Saiba mais</a>
                             </div>
                         </div>
                         <div class="book-info">
                             <h3 class="book-title">Água Funda</h3>
                             <p class="book-author">Ruth Guimarães</p>
                             <button class="book-genre">R$ 46,50</button>
+                            <button class="btn-add" onclick="adicionarItem('Água Funda', 46.50)">Adicionar ao Carrinho</button>
                         </div>
                     </article>
                 </div>
@@ -237,15 +238,16 @@
         </section>
     </main>
 
-    <!-- Rodapé -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div>
                     <h3 class="footer-title">Sobre Nós</h3>
-                    <p class="footer-text">A Livraria Literária é sua fonte confiável para descobrir os melhores livros em diversos gêneros. Cultivamos o amor pela leitura há mais de 10 anos.</p>
+                    <p class="footer-text">A Livraria Literária é sua fonte confiável para descobrir os melhores livros
+                        em diversos gêneros. Cultivamos o amor pela leitura há mais de 10 anos.</p>
                 </div>
-                <div>
+
+                <nav aria-label="Links de Gêneros e Páginas">
                     <h3 class="footer-title">Links Rápidos</h3>
                     <ul class="footer-list">
                         <li><a href="index.html">Início</a></li>
@@ -256,42 +258,56 @@
                         <li><a href="manga.html">Mangá</a></li>
                         <li><a href="terror.html">Terror</a></li>
                     </ul>
-                </div>
-                <div>
-                     <h3 class="footer-title">Contato</h3>
+                </nav>
+
+                <address>
+                    <h3 class="footer-title">Contato</h3>
                     <ul class="footer-list">
-                        <li><a href="contato@gmail.com">contato69@gmail.com</a></li>
-                        <li><a href="tel:+5571999999999">+55(71)######### </a></li>
+                        <li><a href="mailto:contato69@gmail.com">contato69@gmail.com</a></li>
+                        <li><a href="tel:+5571999999999">+55 (71) #########</a></li>
                         <li>Bahia, BA - Brasil</li>
                     </ul>
-                </div>
+                </address>
+
                 <div>
                     <h3 class="footer-title">Redes Sociais</h3>
                     <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
+                        <a href="#" class="social-link" aria-label="Visite nosso Facebook">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                             </svg>
                         </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
+                        <a href="#" class="social-link" aria-label="Visite nosso Instagram">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z" />
                             </svg>
                         </a>
-                        <a href="#" class="social-link" aria-label="Twitter">
+                        <a href="#" class="social-link" aria-label="Visite nosso Twitter (X)">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.949.555-2.005.959-3.127 1.184-.897-.959-2.178-1.559-3.594-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067C2.179 19.29 4.768 20 7.548 20c9.142 0 14.307-7.721 13.995-14.646a9.936 9.936 0 0 0 .959-2.534z"/>
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                             </svg>
                         </a>
                     </div>
                 </div>
             </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2025 Livraria Literária. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
+    <div class="carrinho" id="carrinho">
+        <h2>🛍️ Seu Carrinho</h2>
+        <div id="itensCarrinho"></div>
+        <p id="total">Total: R$ 0,00</p>
+        <button class="btn-carrinho" id="fecharCarrinho">Fechar</button>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descubra os melhores livros de Romance na Livraria Literária">
+    <meta name="description" content="Descubra os melhores livros de Terror na Livraria Literária">
     <title>Terror - Livraria Literária</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,13 +17,10 @@
     <div class="container">
         <!-- Linha superior: logo, busca e tema -->
         <div class="header-content">
-            <!-- Logo -->
             <div class="logo">
                 <img src="images/logo.png" alt="Livraria Literária Logo">
                 <span class="logo-text">Livraria Literária</span>
             </div>
-
-            <!-- Barra de Pesquisa -->
             <div class="search-bar">
                 <input type="text" class="search-input" placeholder="Buscar por título ou autor...">
                 <button class="search-btn" aria-label="Buscar">
@@ -34,12 +31,8 @@
                     </svg>
                 </button>
             </div>
-           <a href="login.html" class="btn-cadastro">
-    Login/Cadastro
-</a>
-
-
-            <!-- Alternador de Tema -->
+            <a href="login.html" class="btn-cadastro">Login/Cadastro</a>
+            <button class="btn-carrinho" id="abrirCarrinho">🛒 Ver Carrinho</button>
             <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
                 <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -58,242 +51,252 @@
             </button>
         </div>
 
-        <!-- Linha inferior: menu de gêneros -->
         <nav class="nav">
             <ul class="nav-list">
-                <li><a href="index.html" class="nav-link active">Início</a></li>
+                <li><a href="index.html" class="nav-link">Início</a></li>
                 <li><a href="romance.html" class="nav-link">Romance</a></li>
                 <li><a href="acao.html" class="nav-link">Ação</a></li>
                 <li><a href="comedia.html" class="nav-link">Comédia</a></li>
                 <li><a href="ficcao.html" class="nav-link">Ficção</a></li>
                 <li><a href="manga.html" class="nav-link">Mangá</a></li>
-                <li><a href="terror.html" class="nav-link">Terror</a></li>
+                <li><a href="terror.html" class="nav-link active">Terror</a></li>
             </ul>
         </nav>
     </div>
 </header>
-    <!-- Conteúdo Principal -->
-    <main style="margin-top: 80px;">
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h1 class="section-title">Terror</h1>
-                    <p class="section-subtitle">Livros assustadores que exploram seus maiores medos</p>
-                </div>
-                
-                <div class="books-grid">
-                    <!-- Livro 1 -->
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="images/terror/terror_1.jpg" alt="O Exorcista">
-                            <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <h3 class="book-title">O Exorcista</h3>
-                            <p class="book-author">  William Peter Blatty</p>
-                            <button class="book-genre">R$35,00</button>
-                        </div>
-                    </article>
 
-                    <!-- Livro 2 -->
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="images/terror/terror_2.jpg" alt="Coraline: Acompanha marcador de páginas especial">
-                            <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <h3 class="book-title">Coraline: Acompanha marcador de páginas especial</h3>
-                            <p class="book-author"> Neil Gaiman</p>
-                            <button class="book-genre">R$46,85</button>
-
-                        </div>
-                    </article>
-
-                    <!-- Livro 3 -->
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="images/terror/terror_3.jpg" alt="A Volta do parafuso">
-                            <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <h3 class="book-title">A Volta do parafuso</h3>
-                            <p class="book-author"> Henry James</p>
-                            <button class="book-genre">R$56,28</button>
-
-                        </div>
-                    </article>
-
-                    <!-- Livro 4 -->
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="images/terror/terror_4.jpg" alt="Psicose ">
-                            <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <h3 class="book-title">Psicose </h3>
-                            <p class="book-author">  Robert Bloch</p>
-                            <button class="book-genre">R$41,20</button>
-
-                        </div>
-                    </article>
-
-                    <!-- Livro 5 -->
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="images/terror/terror_5.jpg" alt="A assombração da Casa da Colina">
-                            <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <h3 class="book-title">PeqA assombração da Casa da Colina</h3>
-                            <p class="book-author">  Shirley Jackson</p>
-                           <button class="book-genre">R$95,00</button>
-                        </div>
-                    </article>
-
-                    <!-- Livro 6 -->
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="images/terror/terror_6.jpg" alt="Frankenstein ">
-                            <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <h3 class="book-title">Frankenstein </h3>
-                            <p class="book-author"> Mary Shelley</p>
-                            <button class="book-genre">R$11,96</button>
-                        </div>
-                    </article>
-
-                    <!-- Livro 7 -->
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="images/terror/terror_7.jpg" alt="O chamado de Cthulhu e outros contos ">
-                            <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <h3 class="book-title">O chamado de Cthulhu e outros contos</h3>
-                            <p class="book-author"> H. P. Lovecraft</p>
-                           <button class="book-genre">R$19,82</button>
-                        </div>
-                    </article>
-
-                    <!-- Livro 8 -->
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="images/terror/terror_8.jpg" alt="Misery: Louca obsessão">
-                            <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <h3 class="book-title">Misery: Louca obsessão</h3>
-                            <p class="book-author"> Stephen King</p>
-                            <button class="book-genre">R$62,66</button>
-                        </div>
-                    </article>
-
-                    <!-- Livro 9 -->
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="images/terror/terror_9.jpg" alt="Escuridão Total Sem Estrelas">
-                            <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <h3 class="book-title">Escuridão Total Sem Estrelas</h3>
-                            <p class="book-author">Stephen King </p>
-                            <button class="book-genre">R$73,91</button>
-                        </div>
-                    </article>
-
-                    <!-- Livro 10 -->
-                    <article class="book-card">
-                        <div class="book-cover">
-                            <img src="images/terror/terror_10.jpg" alt="Não pisque">
-                            <div class="book-overlay">
-                                <button class="btn-overlay">Saiba mais</button>
-                            </div>
-                        </div>
-                        <div class="book-info">
-                            <h3 class="book-title">Não pisque</h3>
-                            <p class="book-author"> Stephen King</p>
-                            <button class="book-genre">R$74,10</button>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Rodapé -->
-    <footer class="footer">
+<main style="margin-top: 80px;">
+    <section class="section">
         <div class="container">
-            <div class="footer-content">
-                <div>
-                    <h3 class="footer-title">Sobre Nós</h3>
-                    <p class="footer-text">A Livraria Literária é sua fonte confiável para descobrir os melhores livros em diversos gêneros. Cultivamos o amor pela leitura há mais de 10 anos.</p>
-                </div>
-                <div>
-                    <h3 class="footer-title">Links Rápidos</h3>
-                    <ul class="footer-list">
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="romance.html">Romance</a></li>
-                        <li><a href="acao.html">Ação</a></li>
-                        <li><a href="comedia.html">Comédia</a></li>
-                        <li><a href="ficcao.html">Ficção</a></li>
-                        <li><a href="manga.html">Mangá</a></li>
-                        <li><a href="terror.html">Terror</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="footer-title">Contato</h3>
-                    <ul class="footer-list">
-                        <li><a href="contato@gmail.com">contato69@gmail.com</a></li>
-                        <li><a href="tel:+5571999999999">+55(71)######### </a></li>
-                        <li>Bahia, BA - Brasil</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="footer-title">Redes Sociais</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+            <div class="section-header">
+                <h1 class="section-title">Terror</h1>
+                <p class="section-subtitle">Livros assustadores que exploram seus maiores medos</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Livraria Literária. Todos os direitos reservados.</p>
+            
+            <div class="books-grid">
+                <!-- Livro 1 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/terror/terror_1.jpg" alt="O Exorcista">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">O Exorcista</h3>
+                        <p class="book-author">William Peter Blatty</p>
+                        <button class="book-genre">R$35,00</button>
+                        <button class="btn-add" onclick="adicionarItem('O Exorcista', 35.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Livro 2 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/terror/terror_2.jpg" alt="Coraline: Acompanha marcador de páginas especial">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Coraline: Acompanha marcador de páginas especial</h3>
+                        <p class="book-author">Neil Gaiman</p>
+                        <button class="book-genre">R$46,85</button>
+                        <button class="btn-add" onclick="adicionarItem('Coraline: Acompanha marcador de páginas especial', 46.85)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Livro 3 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/terror/terror_3.jpg" alt="A Volta do parafuso">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">A Volta do parafuso</h3>
+                        <p class="book-author">Henry James</p>
+                        <button class="book-genre">R$56,28</button>
+                        <button class="btn-add" onclick="adicionarItem('A Volta do parafuso', 56.28)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Livro 4 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/terror/terror_4.jpg" alt="Psicose">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Psicose</h3>
+                        <p class="book-author">Robert Bloch</p>
+                        <button class="book-genre">R$41,20</button>
+                        <button class="btn-add" onclick="adicionarItem('Psicose', 41.20)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Livro 5 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/terror/terror_5.jpg" alt="A assombração da Casa da Colina">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">A assombração da Casa da Colina</h3>
+                        <p class="book-author">Shirley Jackson</p>
+                        <button class="book-genre">R$95,00</button>
+                        <button class="btn-add" onclick="adicionarItem('A assombração da Casa da Colina', 95.00)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Livro 6 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/terror/terror_6.jpg" alt="Frankenstein">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Frankenstein</h3>
+                        <p class="book-author">Mary Shelley</p>
+                        <button class="book-genre">R$11,96</button>
+                        <button class="btn-add" onclick="adicionarItem('Frankenstein', 11.96)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Livro 7 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/terror/terror_7.jpg" alt="O chamado de Cthulhu e outros contos">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">O chamado de Cthulhu e outros contos</h3>
+                        <p class="book-author">H. P. Lovecraft</p>
+                        <button class="book-genre">R$19,82</button>
+                        <button class="btn-add" onclick="adicionarItem('O chamado de Cthulhu e outros contos', 19.82)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Livro 8 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/terror/terror_8.jpg" alt="Misery: Louca obsessão">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Misery: Louca obsessão</h3>
+                        <p class="book-author">Stephen King</p>
+                        <button class="book-genre">R$62,66</button>
+                        <button class="btn-add" onclick="adicionarItem('Misery: Louca obsessão', 62.66)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Livro 9 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/terror/terror_9.jpg" alt="Escuridão Total Sem Estrelas">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Escuridão Total Sem Estrelas</h3>
+                        <p class="book-author">Stephen King</p>
+                        <button class="book-genre">R$73,91</button>
+                        <button class="btn-add" onclick="adicionarItem('Escuridão Total Sem Estrelas', 73.91)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
+
+                <!-- Livro 10 -->
+                <article class="book-card">
+                    <div class="book-cover">
+                        <img src="images/terror/terror_10.jpg" alt="Não pisque">
+                        <div class="book-overlay">
+                            <button class="btn-overlay">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Não pisque</h3>
+                        <p class="book-author">Stephen King</p>
+                        <button class="book-genre">R$74,10</button>
+                        <button class="btn-add" onclick="adicionarItem('Não pisque', 74.10)">Adicionar ao Carrinho</button>
+                    </div>
+                </article>
             </div>
         </div>
-    </footer>
+    </section>
+</main>
 
-    <script src="js/script.js"></script>
+<!-- Rodapé -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div>
+                <h3 class="footer-title">Sobre Nós</h3>
+                <p class="footer-text">A Livraria Literária é sua fonte confiável para descobrir os melhores livros em diversos gêneros. Cultivamos o amor pela leitura há mais de 10 anos.</p>
+            </div>
+            <div>
+                <h3 class="footer-title">Links Rápidos</h3>
+                <ul class="footer-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="romance.html">Romance</a></li>
+                    <li><a href="acao.html">Ação</a></li>
+                    <li><a href="comedia.html">Comédia</a></li>
+                    <li><a href="ficcao.html">Ficção</a></li>
+                    <li><a href="manga.html">Mangá</a></li>
+                    <li><a href="terror.html">Terror</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-title">Contato</h3>
+                <ul class="footer-list">
+                    <li><a href="contato@gmail.com">contato69@gmail.com</a></li>
+                    <li><a href="tel:+5571999999999">+55(71)######### </a></li>
+                    <li>Bahia, BA - Brasil</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-title">Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                            <circle cx="12" cy="12" r="3.6"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.897-.959-2.178-1.555-3.594-1.555-2.719 0-4.924 2.206-4.924 4.924 0 .39.043.765.127 1.124C7.69 8.094 4.066 6.13 1.64 3.161c-.427.735-.666 1.58-.666 2.475 0 1.708.87 3.216 2.188 4.099-.807-.026-1.566-.247-2.228-.616v.062c0 2.385 1.693 4.374 3.946 4.828-.413.111-.849.171-1.296.171-.317 0-.626-.03-.927-.086.627 1.956 2.444 3.377 4.6 3.417-1.68 1.318-3.809 2.105-6.102 2.105-.396 0-.788-.023-1.174-.069 2.179 1.396 4.768 2.211 7.548 2.211 9.054 0 14-7.496 14-13.986 0-.21 0-.423-.015-.634.962-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2025 Livraria Literária. Todos os direitos reservados.</p>
+    </div>
+</footer>
+    <div class="carrinho" id="carrinho">
+        <h2>🛍️ Seu Carrinho</h2>
+        <div id="itensCarrinho"></div>
+        <p id="total">Total: R$ 0,00</p>
+        <button class="btn-carrinho" id="fecharCarrinho">Fechar</button>
+    </div>
+<script src="js/script.js"></script>
 </body>
 </html>
